@@ -1,0 +1,226 @@
+@import url("https://fonts.googleapis.com/css2?family=Inconsolata:wdth,wght@91.8,670&family=PT+Serif&family=Space+Mono:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inconsolata:wdth,wght@91.8,670&family=PT+Serif&family=Poppins&family=Space+Mono:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&family=PT+Serif&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&family=PT+Serif:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&family=PT+Serif:wght@400;700&family=Poppins:wght@400;600&display=swap");
+
+*,
+::after,
+::before {
+  box-sizing: content-box;
+}
+
+.intro {
+  margin-top: 15%;
+  margin-left: 12px;
+  padding-right: 10%;
+}
+.intro h1 {
+  font-family: "PT Serif", serif;
+  font-weight: 700;
+  font-size: 36px;
+}
+.intro h3 {
+  margin-top: 28px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-size: 18px;
+}
+.intro p {
+  position: relative;
+  top: -8px;
+  margin-top: 10px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+}
+.people {
+  margin-top: 12%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin-bottom: 30px;
+}
+.people div {
+  flex-basis: 148px;
+  height: 220px;
+  width: 138px;
+  position: relative;
+  margin-bottom: 20%;
+  transition-duration: 500ms;
+  transition-timing-function: ease-in-out;
+}
+.people div:hover {
+  z-index: 999;
+  background-color: #a9a9a9;
+  border: 8px solid #a9a9a9;
+  transform: scale(1.2);
+  box-shadow: 5px 5px 5px rgb(94, 93, 93);
+  border-radius: 3px;
+  color: white;
+  text-transform: inherit;
+}
+
+.people img {
+  position: absolute;
+  top: -30px;
+  width: 138px;
+  height: 257px;
+  object-fit: contain;
+}
+
+.people div p:first-child {
+  position: relative;
+  top: 51px;
+  right: -70px;
+  margin-left: 13px;
+  font-weight: 400;
+  transform: rotate(90deg);
+  -webkit-transform: rotate(90deg);
+  font-family: "PT Serif", serif;
+  font-size: 10px;
+}
+
+.people div:nth-child(even) {
+  top: 49px;
+}
+.people div p:last-child {
+  position: absolute;
+  bottom: -25px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+}
+footer {
+  position: relative;
+  top: 40px;
+  font-family: "Montserrat", sans-serif;
+  font-size: 14px;
+  color: #a9a9a9;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 46px;
+}
+a:link,
+:visited {
+  color: #a9a9a9;
+  font-family: "Montserrat", sans-serif;
+  font-size: 14px;
+}
+.me {
+  color: #797878;
+  font-weight: 550;
+  text-decoration: underline;
+}
+
+/* Mobile-landscape */
+@media only screen and (min-width: 900px) {
+  .intro {
+    margin-top: 8%;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .intro h3 {
+    position: relative;
+    left: -23px;
+  }
+
+  .intro p {
+    left: 331px;
+    overflow-wrap: break-word;
+    margin-right: 374px;
+  }
+
+  *,
+  ::after,
+  ::before {
+    margin-left: 20px;
+    margin-right: 29px;
+  }
+
+  .people div p:first-child {
+    top: 39px;
+    right: -84px;
+  }
+
+  .people div p:last-child {
+    bottom: -24px;
+    left: -15px;
+    width: inherit;
+  }
+  a {
+    margin-left: 5px;
+    margin-right: 5px;
+  }
+
+  /* style.css | http://127.0.0.1:5500/my-team-page-master/public/style.css */
+
+  .people img {
+    top: -26px;
+    left: -16px;
+  }
+}
+
+/* desktop */
+@media only screen and (min-width: 1100px) {
+  .people div {
+    height: 390px;
+    width: 246px;
+  }
+
+  .people img {
+    width: 237px;
+    height: 457px;
+  }
+
+  /* style.css | http://127.0.0.1:5500/my-team-page-master/public/style.css */
+
+  .people div {
+    /* flex-basis: 148px; */
+    flex-basis: 268px;
+  }
+
+  @media only screen and (min-width: 1100px) {
+    .people div {
+      /* height: 390px; */
+      /* width: 246px; */
+      height: 397px;
+    }
+  }
+
+  @media only screen and (min-width: 900px) {
+    .people div p:first-child {
+      top: 127px;
+      right: -125px;
+      font-size: 12px;
+    }
+    .people div p:last-child {
+      bottom: -20px;
+      font-size: 18px;
+    }
+    .intro h3 {
+      left: 234px;
+      margin-top: 22px;
+    }
+    .intro p {
+      margin-right: 409px;
+      margin-left: 339px;
+      top: -53px;
+      font-size: 18px;
+    }
+  }
+
+  .intro h1 {
+    margin-left: 83px;
+  }
+
+.people {
+    margin-top: -1%;
+  }
+  
+  .people div:nth-child(2n) {
+    top: 75px;
+  }
+  
+}
