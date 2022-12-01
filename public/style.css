@@ -114,7 +114,7 @@ a:link,
 }
 
 /* Mobile-landscape */
-@media only screen and (min-width: 900px) {
+@media only screen and (min-width: 795px) {
   .intro {
     margin-top: 8%;
     display: flex;
